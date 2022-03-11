@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="/css/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+  <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-800">
+    <div class="container flex flex-wrap justify-between items-center mx-auto">
+      <a href="/" class="flex">
+        <svg class="mr-2 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+        </svg>
+        <span class="self-center text-lg font-semibold whitespace-nowrap dark:text-white">LTW</span>
+      </a>
+
+      <button data-collapse-toggle="mobile-menu" type="button"
+        class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+        aria-controls="mobile-menu-2" aria-expanded="false">
+        <span class="sr-only">Open menu</span>
+        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd"
+            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+            clip-rule="evenodd"></path>
+        </svg>
+        <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"></path>
+        </svg>
+      </button>
+      <div class="hidden w-full md:block md:w-auto" id="mobile-menu">
+        <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
+          <li>
+            <a href="/"
+              class="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white"
+              aria-current="page">Trang chủ</a>
+          </li>
+
+          <li>
+            <a href="/Bai1/index.html"
+              class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Bài
+              1</a>
+          </li>
+          <li>
+            <a href="/Bai2/index.html"
+              class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Bài
+              2</a>
+          </li>
+          <li>
+            <a href="/Bai3/index.html"
+              class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Bài
+              3</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <main class="relative w-full bg-white" style="font-family:ibm-plex-arabic, sans-serif;">
+    <div class="absolute inset-0 w-full h-full opacity-25 sm:opacity-50 overflow-hidden">
+      <svg viewBox="0 0 150 350" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        class="absolute top-0 right-0 w-auto h-full opacity-75">
+        <defs>
+          <path d="M0 0h50v50H0z"></path>
+          <path d="M0 0h50v50H0z"></path>
+          <path d="M0 0h150v150H0z"></path>
+        </defs>
+        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+          <g>
+            <g fill="#3B82F6" fill-rule="nonzero">
+              <path d="M25 25c13.807 0 25-11.193 25-25H0c0 13.807 11.193 25 25 25z"></path>
+            </g>
+            <g transform="translate(0 100)">
+              <mask fill="#fff">
+                <use xlink:href="#path-1"></use>
+              </mask>
+              <path d="M25 0c13.807 0 25 11.193 25 25S38.807 50 25 50H0V0h25z" fill="#F9C7FF" mask="url(#mask-2)">
+              </path>
+            </g>
+            <g transform="translate(100 100)">
+              <mask fill="#fff">
+                <use xlink:href="#path-3"></use>
+              </mask>
+              <path d="M25 25c13.807 0 25-11.193 25-25H0c0 13.807 11.193 25 25 25z" fill="#93FFFD" fill-rule="nonzero"
+                mask="url(#mask-4)"></path>
+            </g>
+            <g transform="translate(0 200)">
+              <mask fill="#fff">
+                <use xlink:href="#path-5"></use>
+              </mask>
+              <path d="M75 75c0 41.421 33.579 75 75 75V0c-41.421 0-75 33.579-75 75z" fill="#421984" fill-rule="nonzero"
+                mask="url(#mask-6)"></path>
+            </g>
+          </g>
+        </g>
+      </svg>
+      <svg viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        class="absolute top-0 left-0 w-auto h-full opacity-30">
+        <defs>
+          <path d="M0 0h50v50H0z"></path>
+          <path d="M0 0h50v50H0z"></path>
+        </defs>
+        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+          <g transform="matrix(-1 0 0 1 150 0)">
+            <g transform="translate(0 25)" fill="#93FFFD" fill-rule="nonzero">
+              <path d="M25 0C11.193 0 0 11.193 0 25h50C50 11.193 38.807 0 25 0z"></path>
+            </g>
+            <path d="M25 50C11.193 50 0 38.807 0 25S11.193 0 25 0h25v50H25z" transform="translate(100)" fill="#FF642D">
+            </path>
+            <g transform="translate(0 100)">
+              <mask fill="#fff">
+                <use xlink:href="#path-1"></use>
+              </mask>
+              <path d="M25 50C11.193 50 0 38.807 0 25S11.193 0 25 0h25v50H25z" fill="#B3EBFF" mask="url(#mask-2)">
+              </path>
+            </g>
+            <g transform="translate(100 200)">
+              <mask fill="#fff">
+                <use xlink:href="#path-3"></use>
+              </mask>
+              <path d="M25 50C11.193 50 0 38.807 0 25S11.193 0 25 0h25v50H25z" fill="##7A8AF3" mask="url(#mask-4)">
+              </path>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </div>
+    <div class="relative w-full px-4 pt-16 pb-16 mx-auto bg-top bg-cover max-w-6xl lg:py-24 lg:pb-32">
+      <div class="max-w-xl mb-10 ml-auto mr-auto bg-top bg-cover md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
+        <div
+          class="max-w-2xl mb-6 ml-auto mr-auto  tracking-tight text-gray-900 bg-top bg-cover sm:text-4xl md:mx-auto">
+          <p
+            class="inline max-w-lg text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
+            NHÓM 06
+          </p>
+        </div>
+      </div>
+      <div class="grid gap-10 row-gap-8 ml-auto mr-auto sm:row-gap-10 lg:max-w-screen-lg sm:grid-cols-2 lg:grid-cols-3">
+        <div class="flex items-center">
+          <img src="/images/default-avatar.webp" class="object-cover w-20 h-20 ml-4 rounded-full shadow" />
+          <div class="relative ml-2">
+            <p class="text-lg font-bold text-gray-800">Nguyễn Quốc Khánh</p>
+            <p class="text-sm text-gray-600">DH51804851</p>
+            <p class="text-sm text-gray-600">Nhóm trưởng</p>
+          </div>
+        </div>
+
+        <div class="flex items-center">
+          <img src="/images/default-avatar.webp" class="object-cover w-20 h-20 ml-4 rounded-full shadow" />
+          <div class="relative ml-2">
+            <p class="text-lg font-bold text-gray-800">Tống Khánh Nhật An</p>
+            <p class="text-sm text-gray-600">DH51804249</p>
+            <p class="text-sm text-gray-600">Thành viên</p>
+          </div>
+        </div>
+
+        <div class="flex items-center">
+          <img src="/images/default-avatar.webp" class="object-cover w-20 h-20 ml-4 rounded-full shadow" />
+          <div class="relative ml-2">
+            <p class="text-lg font-bold text-gray-800">Phạm Đình Vương</p>
+            <p class="text-sm text-gray-600">DH51806073</p>
+            <p class="text-sm text-gray-600">Thành viên</p>
+          </div>
+        </div>
+
+        <div class="flex items-center">
+          <img src="/images/default-avatar.webp" class="object-cover w-20 h-20 ml-4 rounded-full shadow" />
+          <div class="relative ml-2">
+            <p class="text-lg font-bold text-gray-800">Mai Trương Tài</p>
+            <p class="text-sm text-gray-600">DH51805497</p>
+            <p class="text-sm text-gray-600">Thành viên</p>
+          </div>
+        </div>
+        <div class="flex items-center">
+          <img src="/images/default-avatar.webp" class="object-cover w-20 h-20 ml-4 rounded-full shadow" />
+          <div class="relative ml-2">
+            <p class="text-lg font-bold text-gray-800">Trần Nguyễn Quốc Huy</p>
+            <p class="text-sm text-gray-600">DH51804772</p>
+            <p class="text-sm text-gray-600">Thành viên</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <div class="flex justify-center align-center">
+    <a href="/Bai1/index.html"
+      class="bg-white m-5 hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-10 px-20 border border-blue-500 hover:border-transparent rounded">
+      Bài 1
+    </a>
+    <a href="/Bai2/index.html"
+      class="bg-white m-5 hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-10 px-20 border border-blue-500 hover:border-transparent rounded">
+      Bài 2
+    </a>
+    <a href="/Bai3/index.html"
+      class="bg-white m-5 hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-10 px-20 border border-blue-500 hover:border-transparent rounded">
+      Bài 3
+    </a>
+  </div>
+</body>
+
+</html>

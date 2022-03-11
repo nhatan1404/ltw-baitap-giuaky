@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-size: 62.5%;
+        }
+
+        body {
+            background-color: #f1f1f1;
+        }
+
+        .form-search {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f7f7f7;
+            padding: 25px;
+        }
+
+        input {
+            border: 2px solid #ccc;
+            padding: 12px 20px;
+            border-radius: 15px;
+            outline: none;
+            width: 40%;
+            font-weight: 500;
+            margin: 10px;
+            transition: all 0.5s;
+        }
+
+        input:focus {
+            border: 2px solid rgb(5, 157, 218);
+        }
+
+        button {
+            padding: 12px 25px;
+            border-radius: 5px;
+            color: #fff;
+            font-weight: 659;
+            font-size: 1.4rem;
+            background-color: #1a6cc9;
+            border: 1px solid #1961b4;
+        }
+
+        .line {
+            border-top: 2px solid rgb(209, 209, 209);
+        }
+
+        .content {
+            margin: auto;
+            width: 80%;
+        }
+
+        .book {
+            font-size: 1.6rem;
+            font-weight: 650;
+            padding: 12px 25px;
+            background-color: #ffffff;
+            border-bottom: 2px solid #eeeeee;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form-search">
+        <input type="text" name="keyword" id="keyword" placeholder="Nhập từ khoá">
+        <button type="button" onclick="search()">Tìm kiếm</button>
+    </div>
+    <hr class="line">
+    <div class="content">
+        <div id="result">
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        const api = 'https://621462a689fad53b1f124321.mockapi.io/book';
+
+        const removeBook = (id) => {
+            $.ajax({
+                url: `${api}/${id}`,
+                type: 'DELETE',
+                dataType: 'json',
+                success: function (dataReturn) {
+                    $(`#book-${id}`).hide(500);
+                }
+            });
+        }
+
+        const search = () => {
+            $.ajax({
+                url: api,
+                type: 'GET',
+                dataType: 'json',
+                success: function (dataReturn) {
+                    $.each(dataReturn, function (k, v) {
+                        var s = `<div class="book" id="book-${v.id}" onClick="removeBook(${v.id})"> ${v.id} - ${v.name}</div>`;
+                        $('#result').append(s);
+                    });
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>

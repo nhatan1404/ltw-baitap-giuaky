@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bài 2 - Câu 2</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.11.4/css/dataTables.bootstrap5.min.css" />
+</head>
+
+<body>
+  <div class="container pt-4">
+    <div class="row">
+      <div class="col-md-12">
+        <table id="cau2" class="table table-striped table-bordered">
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script src="https://cdn.datatables.net/1.11.4/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/1.11.4/js/dataTables.bootstrap5.min.js"></script>
+
+  <script>
+    $('#cau2').DataTable({
+      processing: true,
+      ajax: { url: "https://jsonplaceholder.typicode.com/posts", dataSrc: "" },
+      columns: [
+        { title: "User Id", data: 'userId' },
+        { title: "Id", data: 'id' },
+        { title: "Title", data: 'title' },
+        { title: "Body", data: 'body' },
+      ]
+    });
+  </script>
+</body>
+
+</html>
